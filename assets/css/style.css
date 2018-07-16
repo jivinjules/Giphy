@@ -1,0 +1,70 @@
+.content:before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    background-image: url('../images/disney.jpg');
+    width: 100%;
+    height: 100%;
+    
+    
+  }
+  
+  .shadow {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    background-color: navy;
+    background: linear-gradient(navy, rgb(243, 130, 148));
+    margin-top: 50px;
+    margin-left: 50px;
+   margin-right: 50px;
+   height: 300px;
+   border-radius: 10px;
+ }
+  .content {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Bellefair", serif;
+    color: white;
+  }
+
+  h1 {
+      text-align: center;
+      font-size: 40px;
+      padding-top: 15px;
+      margin-bottom: 20px;
+  }
+
+ .movie-btn, #add-movie {
+    background-color: white;
+    border: black;
+    color: navy;
+    padding: 2px 4px;
+   font-size: 20px;
+    font-family: "Bellefair", serif;
+    margin: 0 auto;
+    border-radius: 2px;
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+
+  .movie-btn:hover {
+    background-color: pink;
+  }
+
+  form{
+      font-size: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+  #buttons-view{
+      padding-left: 30px;
+      padding-right: 30px;
+  }

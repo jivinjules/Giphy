@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Giphy</title>
+
+    <meta charset="utf-8" />
+    <!--Viewport for media queries-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Linking CSS reset-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--Linking CSS Stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Linking Googlefonts-->
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <!--Linking jquery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <div class="content">
+
+        <container>
+            <div class="shadow">
+                <div class="bigbox">
+                    <h1>The Ultimate Disney Gif Search</h1>
+
+                    <!-- The Disney Gifs will be added in this div -->
+                    <div id="disney-gif"></div>
+
+                    <!-- The buttons the user creates are put here  -->
+                    <div id="buttons-view"></div>
+                    <br>
+                    <br>
+                    <form id="disney-search">
+                        <label for="disney-search">Enter a Disney movie and find the Gif's</label>
+                        <input type="text" id="disney-search">
+                        <br>
+                        <!-- Button triggers new movie to be added -->
+                        <input id="add-movie" type="submit" value="Search for a Disney film!">
+                    </form>
+                </div>
+            </div>
+
+        </container>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
