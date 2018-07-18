@@ -23,25 +23,27 @@
 
         <container>
             <div class="shadow">
-                <div class="bigbox">
-                    <h1>The Ultimate Disney Gif Search</h1>
 
-                    <!-- The Disney Gifs will be added in this div -->
-                    <div id="disney-gif"></div>
+                <h1>The Ultimate Disney Gif Search</h1>
 
-                    <!-- The buttons the user creates are put here  -->
-                    <div id="buttons-view"></div>
+                <!-- The Disney Gifs will be added in this div -->
+                <div id="disney-gif"></div>
+
+                <!-- The buttons the user creates are put here  -->
+                <div id="buttons-view"></div>
+                <br>
+                <br>
+                <form id="disney-form">
+                    <label for="disney-search">Enter a Disney movie and find the Gif's</label>
+                    <input type="text" id="disney-search">
                     <br>
-                    <br>
-                    <form id="disney-search">
-                        <label for="disney-search">Enter a Disney movie and find the Gif's</label>
-                        <input type="text" id="disney-search">
-                        <br>
-                        <!-- Button triggers new movie to be added -->
-                        <input id="add-movie" type="submit" value="Search for a Disney film!">
-                    </form>
-                </div>
+                    <!-- Button triggers new movie to be added -->
+                    <input id="add-movie" type="submit" value="Search for a Disney film!">
+                </form>
+
             </div>
+            <!-- Disney Gif area-->
+            <div id="gif-area"></div>
 
         </container>
     </div>
