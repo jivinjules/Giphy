@@ -54,7 +54,7 @@ $(document).ready(function () {
         var rating = results[i].rating;
 
         // Creating an element to have the rating displayed
-        var pOne = $("<p>").text("Rating: " + rating);
+        var pOne = $("<p>").text(movie + " Gif Rating: " + rating);
 
         // The Images can still or animate to call the class "disneyGif" for click.
         var disneyGif = $("<img>");

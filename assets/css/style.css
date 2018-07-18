@@ -1,42 +1,33 @@
+html { 
+  background: url('../images/disneybackgroundimage.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   overflow-y: scroll;
   position: relative;
-  
+   
 }
 
-.content:before {
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    display: block;
-    background-image: url('../images/disney.jpg');
-    max-width: 100%;
-    height: 100%;
-     }
-  
+ 
   .shadow {
-    -moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
-    background-color: navy;
-    background: linear-gradient(navy, rgb(243, 130, 148));
-    margin-top: 50px;
-    margin-left: 50px;
-   margin-right: 50px;
-   height: 250px;
+    -moz-box-shadow:    inset 0 0 10px #d8dadb;
+    -webkit-box-shadow: inset 0 0 10px #d8dadb;
+    box-shadow:         inset 0 0 10px #d8dadb;
+    background-color: #5280b2;
+    background: linear-gradient(#ebbdc8, #9ee2fb);
+    margin-top: 20px;
+    margin-left: 20px;
+   margin-right: 20px;
+   height: 275px;
    border-radius: 10px;
    margin-bottom: 10px;
    
  }
   .content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    margin-left: 20px;
-    margin-right: 20px;
     font-family: "Bellefair", serif;
     color: white;
     
@@ -45,15 +36,17 @@ body {
 
   h1 {
       text-align: center;
-      font-size: 40px;
+      font-size: 50px;
       padding-top: 15px;
       margin-bottom: 20px;
+      font-family: "Princess Sofia", cursive;
+      font: bold
   }
 
 button, #add-movie {
     background-color: white;
     border: black;
-    color: navy;
+    color: #5280b2;
     padding: 2px 4px;
    font-size: 20px;
     font-family: "Bellefair", serif;
@@ -64,29 +57,87 @@ button, #add-movie {
   }
 
   .movie-btn:hover {
-    background-color: pink;
+    background-color: #ebbdc8;
   }
 
-  form, p {
-      font-size: 20px;
+  form, p, #disney-search {
+      font-size: 25px;
+      letter-spacing: 1.5px;
+      font-style: bold;
       padding-left: 30px;
       padding-right: 30px;
       padding-bottom: 5px;
+      font-family: "Bellefair", serif;
   }
   #buttons-view{
       padding-left: 30px;
       padding-right: 30px;
   }
+.item {
+  width: 30%;
+  display: block;
+  float: left
+}
 
   #gif-area {
     padding-left: 50px;
-    
+        
      }
   
-  img, p  {
+  img,   {
    padding-bottom: 5px;
   padding-left: 20px;
   
     }
+
+    #sticky {
+    position: fixed;   
+   bottom:0;          	
+   left:0;            
+   width: 100%;
+   height: 40px;   
+  padding-top: 17px;
+  background:  #64b6e6;
+  text-align: center;
+  color: white;
+  font-family: "Bellefair", serif;
+  border-top: 2px solid #d8dadb;
+   
+   font-size: 12px;
+   letter-spacing: 1.5px;
+  }
+  
+
+    /*Media Queries for ipad and iphone screens*/
+    @media screen and (max-width:768px) {
+      .shadow {
+        margin: 20px 20px 20px 20px;
+        width: 600px;
+        height: 375px;
+        padding-right: 10px;
+      }
+  }
+
+
+@media screen and (max-width:640px) {
+  .shadow {
+    margin: 10px 10px 10px 10px;
+    width: 350px;
+    height: 370px;
+  
+  }
+  h1 {
+    font-size: 25px;
+  }
+  #gif-area {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  button {
+    margin-top: 3px;
+  }
+   
+}
 
     
